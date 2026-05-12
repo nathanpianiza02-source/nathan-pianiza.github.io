@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Premium - Chrys Nathan Pianiza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-light: #F9E4B7;
+            --deep-blue: #0A192F;
+            --dark-bg: #050A14;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-bg);
+            color: #E2E8F0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .premium-border {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .gold-text {
+            color: var(--gold);
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .border-gold {
+            border-color: var(--gold);
+        }
+
+        .bg-gold {
+            background-color: var(--gold);
+        }
+
+        .bg-gold\/10 {
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+
+        .border-gold\/30 {
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F9E4B7 50%, #B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sidebar {
+            background-color: var(--deep-blue);
+            border-right: 2px solid var(--gold);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            border-left: 4px solid var(--gold);
+            padding-left: 15px;
+            margin-bottom: 1.5rem;
+            color: var(--gold);
+        }
+
+        .skill-tag {
+            background: rgba(10, 25, 47, 0.8);
+            border: 1px solid var(--gold);
+            color: var(--gold-light);
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: var(--gold);
+            color: var(--dark-bg);
+            transform: translateY(-2px);
+        }
+
+        .experience-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: 0.3s;
+        }
+
+        .experience-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 2px solid var(--gold);
+        }
+
+        @media print {
+            body { background-color: white; color: black; }
+            .sidebar { background-color: #0A192F !important; color: white !important; -webkit-print-color-adjust: exact; }
+            .gold-text { color: #B8860B !important; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 md:p-10">
+
+    <div class="max-w-5xl w-full bg-[#08101d] shadow-2xl rounded-xl overflow-hidden flex flex-col md:flex-row premium-border">
+        
+        <!-- SIDEBAR -->
+        <aside class="md:w-1/3 sidebar p-8 flex flex-col">
+            <div class="mb-10 text-center">
+                <div class="w-32 h-32 mx-auto rounded-full border-4 border-gold p-1 mb-4 overflow-hidden">
+                    <div class="w-full h-full bg-[#1e293b] flex items-center justify-center text-4xl font-bold text-gold">
+                        CN
+                    </div>
+                </div>
+                <h1 class="text-2xl font-bold gold-gradient uppercase tracking-wider">Chrys Nathan</h1>
+                <p class="text-sm text-blue-300 font-light mt-2 uppercase tracking-widest italic">Pianiza</p>
+            </div>
+
+            <div class="space-y-8">
+                <section>
+                    <h2 class="text-sm font-semibold text-gold uppercase tracking-widest mb-4 border-b border-gold/30 pb-2">Contact</h2>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex flex-col">
+                            <span class="text-gray-400 text-xs">Téléphone</span>
+                            <span class="font-medium">05 56 28 91 92</span>
+                        </li>
+                        <li class="flex flex-col">
+                            <span class="text-gray-400 text-xs">Email</span>
+                            <span class="font-medium break-all">nathanpianiza02@gmail.com</span>
+                        </li>
+                        <li class="flex flex-col">
+                            <span class="text-gray-400 text-xs">Localisation</span>
+                            <span class="font-medium uppercase">Abobo N'dotré, Abidjan</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-sm font-semibold text-gold uppercase tracking-widest mb-4 border-b border-gold/30 pb-2">Atouts</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-xs font-medium border border-blue-400/30 bg-blue-900/20">Travailleur</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-medium border border-blue-400/30 bg-blue-900/20">Ponctuel</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-medium border border-blue-400/30 bg-blue-900/20">Entreprenant</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-medium border border-blue-400/30 bg-blue-900/20">Esprit de groupe</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-sm font-semibold text-gold uppercase tracking-widest mb-4 border-b border-gold/30 pb-2">Logiciels & Outils</h2>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex justify-between"><span>Microsoft Word</span> <span class="text-gold">●●●●○</span></li>
+                        <li class="flex justify-between"><span>Canva</span> <span class="text-gold">●●●○○</span></li>
+                        <li class="flex justify-between"><span>Maintenance PC</span> <span class="text-gold">●●●●○</span></li>
+                        <li class="flex justify-between"><span>Impression Pro</span> <span class="text-gold">●●●●●</span></li>
+                    </ul>
+                </section>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="md:w-2/3 p-8 md:p-12 relative">
+            <header class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2">Développeur <span class="gold-text">Applications</span></h2>
+                <p class="text-blue-400 font-medium tracking-wide">BTS 1 - Informatique Développeur d'Applications (IDA)</p>
+                <div class="mt-6 p-4 bg-blue-900/10 border-l-4 border-gold text-sm italic text-gray-400">
+                    "Futur expert en solutions logicielles, j'allie rigueur opérationnelle et maîtrise des technologies de pointe pour répondre aux défis numériques de demain."
+                </div>
+            </header>
+
+            <section class="mb-12">
+                <h3 class="section-title text-xl font-bold uppercase tracking-tight">Expériences Professionnelles</h3>
+                
+                <div class="experience-card">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="font-bold text-lg text-white">Gestionnaire d'Imprimerie</h4>
+                        <span class="text-xs font-bold text-gold bg-gold/10 px-2 py-1 rounded">EXPERTISE</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-3">Responsable de production & maintenance</p>
+                    <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
+                        <li>Pilotage autonome des travaux d'impression et de reprographie.</li>
+                        <li>Gestion de la relation client et secrétariat administratif via le Pack Office.</li>
+                        <li>Assistance technique et maintenance des postes informatiques.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="font-bold text-lg text-white">Création Web (Projets)</h4>
+                        <span class="text-xs font-bold text-blue-400 bg-blue-400/10 px-2 py-1 rounded">TECH</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-3">Front-end Development</p>
+                    <ul class="text-sm text-gray-300 space-y-2 list-disc list-inside">
+                        <li>Conception de structures web modernes avec <span class="text-gold">HTML5</span>.</li>
+                        <li>Mise en forme avancée et responsive design avec <span class="text-gold">CSS3</span>.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <h3 class="section-title text-xl font-bold uppercase tracking-tight">Maîtrise de l'IA Générative</h3>
+                <p class="text-sm text-gray-400 mb-4">Utilisation avancée des modèles de langage pour l'optimisation du code, la rédaction et la productivité.</p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-tag px-4 py-2 rounded text-xs font-bold uppercase">Gemini</span>
+                    <span class="skill-tag px-4 py-2 rounded text-xs font-bold uppercase">Claude</span>
+                    <span class="skill-tag px-4 py-2 rounded text-xs font-bold uppercase">Perplexity</span>
+                    <span class="skill-tag px-4 py-2 rounded text-xs font-bold uppercase">Prompt Engineering</span>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-title text-xl font-bold uppercase tracking-tight">Parcours Académique</h3>
+                <div class="flex items-start gap-4">
+                    <div class="w-1 bg-gold h-12"></div>
+                    <div>
+                        <h4 class="font-bold text-white text-lg">BTS 1 - Informatique Développeur d'Applications</h4>
+                        <p class="text-sm text-gray-400 uppercase italic">Niveau d'étude actuel</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
